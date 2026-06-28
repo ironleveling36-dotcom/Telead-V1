@@ -1,0 +1,16 @@
+services:
+  adbot:
+    build: .
+    container_name: tele_ad_bot
+    restart: unless-stopped
+    env_file:
+      - .env
+    environment:
+      # Override DB path to live inside the persistent volume
+      DB_PATH: /data/ad_bot.db
+    volumes:
+      # Persists the SQLite DB across container restarts/redeploys
+      - adbot_data:/data
+
+volumes:
+  adbot_data:
