@@ -1,0 +1,16 @@
+# Keep the image small & never leak secrets/sessions into it
+.git
+.gitignore
+.env
+*.session
+*.session-journal
+telethon_session*
+*.db
+*.db-wal
+*.db-shm
+__pycache__/
+*.pyc
+.venv/
+venv/
+README.md
+.DS_Store
