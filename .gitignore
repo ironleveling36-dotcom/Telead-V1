@@ -1,0 +1,23 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+env/
+
+# Secrets & local config
+.env
+
+# Telethon session files (NEVER commit these — full account access!)
+*.session
+*.session-journal
+telethon_session*
+
+# SQLite database
+*.db
+*.db-wal
+*.db-shm
+
+# OS
+.DS_Store
